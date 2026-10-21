@@ -1,0 +1,43 @@
+# --- OS / editors ---
+.DS_Store
+._*
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- Env / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Rust (how-to-rust/*) ---
+# Cargo.lock is kept: these crates are binaries.
+target/
+**/*.rs.bk
+*.pdb
+
+# --- Python (how-to-python/*) ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.coverage
+htmlcov/
+
+# --- Ruby (zerotounicorn/ gem; see also zerotounicorn/.gitignore) ---
+.bundle/
+vendor/bundle/
+*.gem
+.byebug_history
+
+# --- Logs ---
+*.log

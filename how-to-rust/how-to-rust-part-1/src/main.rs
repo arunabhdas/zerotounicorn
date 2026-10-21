@@ -9,5 +9,14 @@ fn add(a: &str, b: &str) -> Result<i32, ParseIntError> {
 fn main() {
     println!("Hello, world!");
     println!("{:?}", add("2", "3"));
-    println!("{:?}", add("2", "x"));
+    let sales = vec![
+        Sale {
+            item: String::from("coffee"),
+            amount: 4,
+        },
+        Sale {
+            item: String::from("bagel"),
+            amount: 3,
+        },
+    ];
 }
